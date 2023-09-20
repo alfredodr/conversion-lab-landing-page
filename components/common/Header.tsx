@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,55 +15,54 @@ const Header = () => {
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 
-    if (winScroll === 0) {
-      setIsVisible(false);
-    } else {
+    if (winScroll > 360) {
       setIsVisible(true);
+    } else {
+      setIsVisible(false);
     }
   };
 
   return (
-    <>
-      <header>
-        <nav
-          className={`bg-white z-10 fixed left-0 right-0 top-0 border border-solid border-b-slate-200 opacity-95  ${
-            isVisible
-              ? "transition-opacity ease-in delay-150"
-              : "opacity-0 transition-opacity ease-out delay-150"
-          }`}
-        >
-          <ul className="flex flex-col md:flex-row  m-0 p-0 list-none gap-1 md:gap-16 justify-center md:justify-center items-center h-48 md:h-20">
-            <li className="flex justify-center gap-2 items-center w-full md:w-3/12">
-              <Image
-                src={
-                  "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/44b07cdf-logo-icon.svg"
-                }
-                alt={"conversion lab logo"}
-                width={40}
-                height={39}
-              />
-              <span className="text-base font-bold opacity-80">
-                CONVERSIONLAB
-              </span>
-            </li>
-            <li className="text-xs font-bold text-[#595F75] hidden md:block">
+    <header
+      className={cn(
+        "bg-white z-10 fixed left-0 right-0 top-0 border border-solid border-b-slate-200 easy-out opacity-0 transition-opacity delay-150",
+        {
+          "ease-in opacity-95": isVisible,
+        }
+      )}
+    >
+      <div className="max-w-[60rem] mx-auto block md:flex md:flex-row md:justify-between items-center">
+        <div className="flex gap-2 justify-center items-center w-full md:w-3/12 my-4 md:my-0">
+          <Image
+            src={"/logo.svg"}
+            alt={"conversion lab logo"}
+            width={40}
+            height={39}
+          />
+          <span className="text-sm md:text-base font-bold opacity-80">
+            CONVERSIONLAB
+          </span>
+        </div>
+        <nav>
+          <ul className="flex flex-col md:flex-row  m-0 p-0 list-none gap-0 md:gap-16 justify-center md:justify-center items-center md:min-h-[5.44rem]">
+            <li className="text-xs font-bold text-[#595F75] hidden md:block lg:block">
               <Link href={"#"}>OUR SERVICES</Link>
             </li>
-            <li className="text-xs font-bold text-[#595F75] hidden md:block">
+            <li className="text-xs font-bold text-[#595F75] hidden md:block lg:block">
               <Link href={"#"}>OUR PROCESS</Link>
             </li>
-            <li className="cursor-pointer bg-[rgba(115,87,246,1)] text-white rounded-full font-bold text-sm px-12 py-3 hover:bg-[#634cca] transition delay-300 duration-75 ease-in-out">
-              Get my free consult
-            </li>
-            <li className="visible  md:hidden">
-              <span className="text-xs text-[#595F75]">
-                No tricks, just friendly advice
-              </span>
+            <li>
+              <button className="cursor-pointer bg-[rgba(115,87,246,1)] text-white rounded-full font-bold text-sm px-16 md:px-12 py-3 hover:bg-[#634cca] transition delay-300 duration-75 ease-in-out">
+                Get my free consult
+              </button>
             </li>
           </ul>
         </nav>
-      </header>
-    </>
+        <p className="visible  md:hidden text-xs text-[#595F75] text-center mb-5 md:mb-0">
+          No tricks, just friendly advice
+        </p>
+      </div>
+    </header>
   );
 };
 
