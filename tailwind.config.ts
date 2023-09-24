@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         dmSans: ["var(--font-dmSans)"],
+        dmSerifText: ["var(--font-dmSerifText)"],
+        kalam: ["var(--font-kalam)"],
       },
     },
   },
