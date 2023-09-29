@@ -12,6 +12,7 @@ const config: Config = {
         dmSans: ["var(--font-dmSans)"],
         dmSerifText: ["var(--font-dmSerifText)"],
         kalam: ["var(--font-kalam)"],
+        gravitasOne: ["var(--font-gravitasOne)"],
       },
     },
   },
