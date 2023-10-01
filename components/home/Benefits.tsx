@@ -12,15 +12,15 @@ const dmSerifText = DM_Serif_Text({
 const Benefits = () => {
   return (
     <section className="bg-white">
-      <div className="min-w-[17.75rem] max-w-[60rem] mx-[4.5625rem] p-6 md:p-16 md:mx-auto grid grid-col-1 md:grid-col-3 gap-10">
+      <div className="max-w-[70rem] p-6 sm:p-16 sm:mx-auto grid grid-col-1 md:grid-col-3 gap-10">
         <div className="col-span-1 md:col-span-3">
           <h2
             className={`text-[1.75rem] leading-8 text-[#343b55] text-center ${dmSerifText.variable} font-dmSerifText mb-4`}
           >
-            <span className="block">Don't waste money on more traffic</span>
-            <span>- fix your landing pages first</span>
+            Don't waste money on more traffic
+            <br />- fix your landing pages first
           </h2>
-          <p className="text-center text-lg">
+          <p className="text-center text-lg text-[#595f75]">
             Benefit from our expertise in designing and managing
             conversion-centered landing pages for your paid traffic. Once we've
             designed, completed copy, and built your landing page, we optimize
@@ -39,7 +39,7 @@ const Benefits = () => {
             </div>
           </div>
           <h3 className="font-bold text-lg my-3">Increase conversion rates</h3>
-          <p>
+          <p className="text-[#595f75]">
             Highly targeted landing pages will increase your conversion rates,
             and optimization with A/B testing takes you to the next level.
           </p>
@@ -56,7 +56,7 @@ const Benefits = () => {
             </div>
           </div>
           <h3 className="font-bold text-lg my-3">Improve your RO</h3>
-          <p>
+          <p className="text-[#595f75]">
             Stop wasting money on more traffic. Get more leads on your existing
             traffic instead. At the end, this skyrockets your ROI.
           </p>
@@ -75,7 +75,7 @@ const Benefits = () => {
           <h3 className="font-bold text-lg my-3">
             Reduce cost per acquisition
           </h3>
-          <p>
+          <p className="text-[#595f75]">
             Higher conversion rates means you get more business from your
             current traffic, and reduce cost per acquisition.
           </p>

@@ -12,64 +12,88 @@ const gravitasOne = Gravitas_One({
 const Stats = () => {
   return (
     <section className="bg-[#FDF2E4]">
-      <div className="min-w-[20rem] max-w-[60rem] mx-[4.5625rem] md:mx-auto grid p-6 md:p-16 gap-16 ">
-        <div className="col-span-2 ">
-          <span className={`text-[1.75rem] block text-center md:text-start`}>
-            <span
-              className={`text-[#FACD76] text-6xl md:text-[6.375rem] ${gravitasOne.variable} font-gravitasOne`}
-            >
-              “
+      <div className="max-w-[70rem] sm:mx-auto p-6 md:p-16">
+        <div className="flex flex-col sm:flex-row justify-between gap-8 mb-8">
+          <div className="col-span-2 ">
+            <span className={`text-[1.75rem] block text-center md:text-start`}>
+              <span
+                className={`text-[#FACD76] text-6xl md:text-[6.375rem] ${gravitasOne.variable} font-gravitasOne`}
+              >
+                “
+              </span>
             </span>
-          </span>
-          <p className="text-xl md:text-2xl md:leading-9 -mt-6 md:-mt-10">
-            ConversionLab has helped Campaign Monitor grow our business by
-            optimizing our landing pages. We’ve increased conversion rates by
-            260% and seen a significant reduction in customer acquisition cost.
-            We are very happy with the results!
-          </p>
-        </div>
-        <div className="col-span-2 md:col-span-1 grid grid-cols-3 md:grid-cols-1 md:col-start-3 ">
-          <div className="relative w-[5.25rem] h-[5.1875rem] md:w-[8.875rem] md:h-[8.875rem] m-auto">
-            <Image
-              src={
-                "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/6f4a786d-shamita-crop_104t04j03y03y00j000000.jpg"
-              }
-              alt={"Shamita Jayakumar. Senior Marketing Manager"}
-              fill
-              quality={100}
-              className="object-contain rounded-full"
-            />
+            <p className="text-lg text-[#2f353e] md:text-2xl md:leading-9 -mt-6 md:-mt-10">
+              ConversionLab has helped Campaign Monitor grow our business by
+              optimizing our landing pages. We’ve increased conversion rates by
+              260% and seen a significant reduction in customer acquisition
+              cost. We are very happy with the results!
+            </p>
           </div>
-          <div className="col-span-2 my-auto md:my-0 md:mx-auto ">
-            <span className="block font-bold">Shamita Jayakumar</span>
-            <span className="block">Senior Marketing Manager</span>
-            <div className="relative w-[8.0625rem] h-[0.8125rem] overflow-hidden">
+          <div className="flex flex-row sm:flex-col justify-start gap-8 sm:gap-4">
+            <div className="relative w-[5.25rem] h-[5.1875rem] md:w-[8.875rem] md:h-[8.875rem] m-0 sm:m-auto">
               <Image
                 src={
-                  "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/c99b4c6d-cm-full-dark-dark_103l00d000000000000000.png"
+                  "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/6f4a786d-shamita-crop_104t04j03y03y00j000000.jpg"
                 }
-                alt={"Campaign Monitor"}
+                alt={"Shamita Jayakumar. Senior Marketing Manager"}
                 fill
+                className="object-contain rounded-full"
               />
+            </div>
+            <div className="my-auto text-start sm:text-center w-max">
+              <span className="block font-semibold text-sm">
+                Shamita Jayakumar
+              </span>
+              <span className="block text-[#2f353e] text-sm">
+                Senior Marketing Manager
+              </span>
+              <div className="relative w-[8.0625rem] h-[0.8125rem] sm:w-[8.75rem] sm:h-[0.875rem] mx-0 sm:mx-auto mt-2 ">
+                <Image
+                  src={
+                    "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/c99b4c6d-cm-full-dark-dark_103l00d000000000000000.png"
+                  }
+                  alt={"Campaign Monitor"}
+                  fill
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="block">
-          <span className="font-semibold text-4xl block">1187%</span>
-          <h3 className="block text-base my-2">UPLIFT IN CVR</h3>
-          <p>The total uplift combined at an average 36% uplift per test.</p>
-        </div>
-        <div className="hidden md:block ">
-          <span className="font-semibold text-4xl block my-2">33</span>
-          <h3 className="block text-base">A/B TESTS PERFORMED</h3>
-          <p>Based on solid hypothesis and across several pages.</p>
-        </div>
-        <div className="block ">
-          <span className="font-semibold text-4xl block">64%</span>
-          <h3 className="block text-base my-2">REDUCTION IN CAC</h3>
-          <p>
-            Increased conversion rates means reduced customer acquisition cost.
-          </p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="block">
+            <span className="font-semibold text-3xl md:text-4xl block">
+              1187%
+            </span>
+            <h3 className="block text-base my-2 font-semibold">
+              UPLIFT IN CVR
+            </h3>
+            <p className="text-[#2f353e]">
+              The total uplift combined at an average 36% uplift per test.
+            </p>
+          </div>
+          <div className="hidden md:block ">
+            <span className="font-semibold text-3xl md:text-4xl block my-2">
+              33
+            </span>
+            <h3 className="block text-base font-semibold">
+              A/B TESTS PERFORMED
+            </h3>
+            <p className="text-[#2f353e]">
+              Based on solid hypothesis and across several pages.
+            </p>
+          </div>
+          <div className="block ">
+            <span className="font-semibold text-3xl md:text-4xl block">
+              64%
+            </span>
+            <h3 className="block text-base my-2 font-semibold">
+              REDUCTION IN CAC
+            </h3>
+            <p className="text-[#2f353e]">
+              Increased conversion rates means reduced customer acquisition
+              cost.
+            </p>
+          </div>
         </div>
       </div>
     </section>
