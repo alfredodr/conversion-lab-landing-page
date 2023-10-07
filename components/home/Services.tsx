@@ -12,7 +12,7 @@ const dmSerifText = DM_Serif_Text({
 const Services = () => {
   return (
     <section className="bg-white">
-      <div className="max-w-[70rem] mx-16 sm:mx-auto">
+      <div className="max-w-[70rem] sm:mx-auto p-6 md:p-16">
         <div className="my-10">
           <h2
             className={`text-center text-[#343b55] text-2xl ${dmSerifText.variable} font-dmSerifText`}
