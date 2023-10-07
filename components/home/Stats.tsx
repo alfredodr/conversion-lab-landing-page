@@ -72,10 +72,8 @@ const Stats = () => {
             </p>
           </div>
           <div className="hidden md:block ">
-            <span className="font-semibold text-3xl md:text-4xl block my-2">
-              33
-            </span>
-            <h3 className="block text-base font-semibold">
+            <span className="font-semibold text-3xl md:text-4xl block">33</span>
+            <h3 className="block text-base my-2 font-semibold">
               A/B TESTS PERFORMED
             </h3>
             <p className="text-[#2f353e]">

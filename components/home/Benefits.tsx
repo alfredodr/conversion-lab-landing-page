@@ -15,7 +15,7 @@ const Benefits = () => {
       <div className="max-w-[70rem] p-6 sm:p-16 sm:mx-auto grid grid-col-1 md:grid-col-3 gap-10">
         <div className="col-span-1 md:col-span-3">
           <h2
-            className={`text-[1.75rem] leading-8 text-[#343b55] text-center ${dmSerifText.variable} font-dmSerifText mb-4`}
+            className={`text-2xl text-[#343b55] text-center ${dmSerifText.variable} font-dmSerifText mb-4`}
           >
             Don't waste money on more traffic
             <br />- fix your landing pages first

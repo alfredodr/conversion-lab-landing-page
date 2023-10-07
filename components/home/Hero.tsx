@@ -19,9 +19,9 @@ const kalam = Kalam({
 const Hero = () => {
   return (
     <section className="bg-[#EFF3FA]">
-      <div className="max-w-[73rem] mx-auto px-6 grid grid-col-1 md:grid-col-2 md:gap-x-28">
+      <div className="max-w-[73rem] mx-auto px-6 grid grid-col-1 md:grid-col-2 ">
         <div>
-          <div className="relative flex gap-2 justify-center md:justify-start items-center py-4 md:py-0  md:mt-5 md:mb-20">
+          <div className="relative flex gap-2 justify-center md:justify-start items-center py-4 md:py-0 md:mt-5 md:mb-20">
             <Image
               src={"/logo.svg"}
               alt={"conversion lab logo"}
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
           <div className="mb-2 md:mb-0">
             <h1
-              className={`${dmSerifText.variable} font-dmSerifText opacity-90 text-3xl md:text-[42px] md:leading-[3rem] mb-3 text[#343b55]`}
+              className={`${dmSerifText.variable} font-dmSerifText opacity-90 text-3xl md:text-[42px] md:leading-[3rem] mb-3 text[#343b55] max-w-[34.75rem]`}
             >
               Supercharge your conversion rates and increase sales
             </h1>
@@ -46,8 +46,8 @@ const Hero = () => {
               </p>
             </div>
             <div>
-              <div className="max-w-[20.1875rem]">
-                <button className="cursor-pointer bg-[#7357f6] text-white text-base rounded-full font-bold w-full max-w-[20.1875rem] h-[3.9375rem] hover:bg-[#634cca] transition delay-300 duration-75 ease-in-out relative">
+              <div className="max-w-[20.1875rem] text-center sm:text-left">
+                <button className="cursor-pointer bg-[#7357f6] text-white rounded-full font-bold text-sm w-full h-[3.75rem] hover:bg-[#634cca] transition delay-300 duration-75 ease-in-out relative">
                   Get my free consult
                   <Image
                     src={
