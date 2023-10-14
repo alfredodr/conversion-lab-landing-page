@@ -32,7 +32,7 @@ const Providers = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center">
           <div className="mx-auto flex flex-col items-center relative rounded-full">
-            <div className="absolute -top-12 left-0 sm:-top-20 sm:left-32  z-10 bg-[#f5f6fab5] rounded-full">
+            <div className="absolute -top-12 left-0 sm:-top-20 sm:left-32 z-10 bg-[#f5f6fab5] rounded-full">
               <span className="w-10 h-10 text-[#405cbf] text-3xl font-bold flex flex-col items-center justify-evenly p-8">
                 A
               </span>

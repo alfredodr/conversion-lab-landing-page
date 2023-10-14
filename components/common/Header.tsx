@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "bg-white z-10 fixed left-0 right-0 top-0 border border-solid border-b-slate-200 easy-out opacity-0 transition-opacity delay-150 invisible",
+        "bg-white z-20 fixed left-0 right-0 top-0 border border-solid border-b-slate-200 easy-out opacity-0 transition-opacity delay-150 invisible",
         {
           "ease-in opacity-95 visible": isVisible,
         }
