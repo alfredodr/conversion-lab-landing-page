@@ -4,6 +4,7 @@ import Stats from "@/components/home/Stats";
 import Services from "@/components/home/Services";
 import Providers from "@/components/home/Providers";
 import Optimization from "@/components/home/Optimization";
+import Acquisition from "@/components/home/Acquisition";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Providers />
       <Optimization />
+      <Acquisition />
     </>
   );
 }
