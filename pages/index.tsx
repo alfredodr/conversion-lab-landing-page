@@ -8,6 +8,7 @@ import Acquisition from "@/components/home/Acquisition";
 import Dynamic from "@/components/home/Dynamic";
 import Testimonials from "@/components/home/Testimonials";
 import Design from "@/components/home/Design";
+import Trusted from "@/components/home/Trusted";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Dynamic />
       <Testimonials />
       <Design />
+      <Trusted />
     </>
   );
 }
