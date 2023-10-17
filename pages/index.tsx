@@ -5,6 +5,7 @@ import Services from "@/components/home/Services";
 import Providers from "@/components/home/Providers";
 import Optimization from "@/components/home/Optimization";
 import Acquisition from "@/components/home/Acquisition";
+import Dynamic from "@/components/home/Dynamic";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Providers />
       <Optimization />
       <Acquisition />
+      <Dynamic />
     </>
   );
 }

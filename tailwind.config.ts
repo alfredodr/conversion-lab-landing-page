@@ -19,6 +19,7 @@ const config: Config = {
         dmSerifText: ["var(--font-dmSerifText)"],
         kalam: ["var(--font-kalam)"],
         gravitasOne: ["var(--font-gravitasOne)"],
+        roboto: ["var(--font-roboto)"],
       },
     },
   },
