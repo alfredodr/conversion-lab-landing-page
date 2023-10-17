@@ -6,6 +6,7 @@ import Providers from "@/components/home/Providers";
 import Optimization from "@/components/home/Optimization";
 import Acquisition from "@/components/home/Acquisition";
 import Dynamic from "@/components/home/Dynamic";
+import Testimonials from "@/components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Optimization />
       <Acquisition />
       <Dynamic />
+      <Testimonials />
     </>
   );
 }
