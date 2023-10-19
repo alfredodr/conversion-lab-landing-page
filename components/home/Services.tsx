@@ -20,8 +20,8 @@ const Services = () => {
             Our Services
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center">
-          <div className="bg-[#F5F6FA] mx-auto flex flex-col items-center relative px-4 py-10 rounded-md">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 sm:gap-5 text-center">
+          <div className="bg-[#F5F6FA] flex flex-col items-center relative px-4 py-10 rounded-md">
             <div className="absolute -top-10 right-0">
               <p className="rounded-full bg-[#6ad19e] w-16 h-16 text-white text-xs font-bold flex flex-col items-center justify-evenly p-10">
                 MOST POPULAR
@@ -69,7 +69,7 @@ const Services = () => {
               I need help with growth
             </button>
           </div>
-          <div className="bg-[#F5F6FA] mx-auto flex flex-col items-center px-4 py-10 rounded-md">
+          <div className="bg-[#F5F6FA] flex flex-col items-center px-4 py-10 rounded-md">
             <div className="flex items-center justify-center">
               <div>
                 <Image
