@@ -32,7 +32,7 @@ const Providers = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-center">
           <div className="mx-auto flex flex-col items-center relative rounded-full">
-            <div className="absolute -top-12 left-0 sm:-top-20 sm:left-32 z-10 bg-[#f5f6fab5] rounded-full">
+            <div className="mx-auto mb-10 z-10 bg-[#f5f6fab5] rounded-full">
               <span className="w-10 h-10 text-[#405cbf] text-3xl font-bold flex flex-col items-center justify-evenly p-8">
                 A
               </span>
@@ -49,24 +49,24 @@ const Providers = () => {
             </div>
           </div>
           <div className="mx-auto flex flex-col items-center rounded-full relative">
-            <div className="absolute -top-12 left-0 sm:-top-20 sm:left-32 z-10 bg-[#405cbfb3] rounded-full">
+            <div className="mx-auto mb-10 z-10 bg-[#405cbfb3] rounded-full">
               <span className="w-10 h-10 text-white text-3xl font-bold flex flex-col items-center justify-evenly p-8">
                 B
               </span>
             </div>
-            <div className="absolute -top-10 right-3 z-10 bg-[#F3F8F5] rounded-full shadow-md w-16 h-16 text-[#6AD19E] text-xs font-bold flex flex-col items-center justify-evenly p-10">
-              <div>
-                <Image
-                  src={"cup.svg"}
-                  alt={"Cup"}
-                  width={30}
-                  height={40}
-                  className="mx-auto"
-                />
-                <p>Winner</p>
-              </div>
-            </div>
             <div className="w-full h-full relative">
+              <div className="absolute -top-16 right-2 md:-right-10 z-10 bg-[#F3F8F5] rounded-full shadow-md w-24 h-24 text-[#6AD19E] text-xs font-bold flex flex-col items-center justify-evenly p-10">
+                <div>
+                  <Image
+                    src={"cup.svg"}
+                    alt={"Cup"}
+                    width={40}
+                    height={40}
+                    className="mx-auto"
+                  />
+                  <span className="text-sm">Winner</span>
+                </div>
+              </div>
               <Image
                 src={
                   "https://d9hhrg4mnvzow.cloudfront.net/conversionlab.no/8055ed47-cm-screenshot-b_10ci084000000000000000.jpg"
