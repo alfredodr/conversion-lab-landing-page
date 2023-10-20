@@ -17,14 +17,14 @@ const Benefits = () => {
           <h2
             className={`text-2xl text-[#343b55] text-center ${dmSerifText.variable} font-dmSerifText mb-4`}
           >
-            Don't waste money on more traffic
+            Don&apos;t waste money on more traffic
             <br />- fix your landing pages first
           </h2>
           <p className="text-center text-lg text-[#595f75]">
             Benefit from our expertise in designing and managing
-            conversion-centered landing pages for your paid traffic. Once we've
-            designed, completed copy, and built your landing page, we optimize
-            it to perform even better over time.
+            conversion-centered landing pages for your paid traffic. Once
+            we&apos;ve designed, completed copy, and built your landing page, we
+            optimize it to perform even better over time.
           </p>
         </div>
         <div>

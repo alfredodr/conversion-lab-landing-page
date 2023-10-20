@@ -68,7 +68,8 @@ const Optimization = () => {
               </h3>
               <p className="text-[#595f75] text-sm sm:text-base">
                 Based on insight, experience and analysis we create our
-                hypothesis for testing "If we implement X we expect outcome Y".
+                hypothesis for testing &quot;If we implement X we expect outcome
+                Y&quot;.
               </p>
             </div>
           </div>

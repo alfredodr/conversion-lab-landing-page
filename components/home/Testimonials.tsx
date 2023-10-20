@@ -37,7 +37,7 @@ const Testimonials = () => {
                 ConversionLab has a knack for drawing out new and inventive
                 tactics from tried-and-true methods that deliver real results.
                 Their reputation for optimizing is only matched by their
-                friendliness, and that's incredibly rare.
+                friendliness, and that&apos;s incredibly rare.
               </p>
             </div>
             <div className="mb-5 flex flex-col items-center justify-center">

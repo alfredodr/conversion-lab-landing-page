@@ -93,7 +93,7 @@ const Hero = () => {
             <span
               className={`${kalam.variable} font-kalam text-[0.6rem] md:text-sm text-[#595f75] font-bold block`}
             >
-              Hi there! I'm Finge,
+              Hi there! I&apos;m Finge,
             </span>
             <span
               className={`${kalam.variable} font-kalam text-[0.6rem] md:text-sm text-[#595f75] font-bold block`}

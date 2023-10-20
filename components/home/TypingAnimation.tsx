@@ -42,7 +42,7 @@ export default function Typewriter() {
     return () => {
       clearTimeout(timeout);
     };
-  }, [textIndex, charIndex, isDeleting]);
+  }, [textIndex, charIndex, isDeleting, delay]);
 
   return (
     <p>
